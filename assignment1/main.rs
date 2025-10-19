@@ -52,7 +52,7 @@ fn get_choice() -> UserChoice {
         match input.to_lowercase().trim() {
             "s" =>  return UserChoice::Stop,
             s if s.is_empty() =>  return UserChoice::Bet,
-            _ => "",
+            _ => {}
         };
     }
 }
@@ -106,7 +106,7 @@ fn game_loop() {
             }
             UserChoice::Stop => {
                 println!("See you soon!");
-                break;
+                return;
             }
         }
     }
