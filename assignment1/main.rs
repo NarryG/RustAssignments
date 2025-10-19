@@ -69,7 +69,7 @@ fn score_outcome(s0: Symbol, s1: Symbol, s2: Symbol) -> (i64, Option<&'static st
     match (s0, s1, s2) {
         (Symbol::Blood, Symbol::Blood, Symbol::Blood) => (5, Some("Three blood!")),
         (Symbol::Bat, Symbol::Bat, Symbol::Bat) => (10, Some("Three bat!")),
-        (Symbol::Vampire, Symbol::Vampire, Symbol::Vampire) => (15, Some("Three vampires!")),
+        (Symbol::Vampire, Symbol::Vampire, Symbol::Vampire) => (100, Some("Three vampires!")),
         _ => (0, None),
     }
 }
