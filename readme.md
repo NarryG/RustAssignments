@@ -1,0 +1,1 @@
+friend decided they were going to ""encourage"" me to learn rust
